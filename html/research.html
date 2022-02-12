@@ -22,12 +22,28 @@
 
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
-	<body style="background-color: skyblue;" >
+	<body style="background-color: black;" >
 
 		<style type="text/css">
-			
-
+			canvas {
+				z-index: 5;
+				display: block;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+			.snowflake {
+			  width: 100%;
+			}
+		  
 		</style>
+
+		<canvas id="canvas" class="ng-scope" width="1707" height="813"></canvas>
+
+		<img src="../images/snowflakes/snowflakes.png" class="snowflake hidden ng-scope" hidden>
+
+		<script type="text/javascript" src="../javascripts animations/snowflakes.js"></script>
 
 		<table class="Container">
 			<tr><td style="font-family: fantasy;">Z-TECH<br> ONLINE</td></tr>
@@ -42,7 +58,7 @@
 		<input type="button" name="" value="👤" style="position: absolute; top: 20px; right: 20px;" onclick="login2()">
 
 				<div class="bg-modal">
-					<div class="card" style="background-color: skyblue;">
+					<div class="card" style="background-color: black;">
 						<img src="../images/z.png" width="100px" height="100px"><br><br><br>
 						<form>
 							<input type="text" id="email" name="" placeholder="Email" style="width: 200px; height: 20px; border-radius: 10px;"><br><br>
@@ -58,7 +74,7 @@
 				</div>
 
 <!--navigation bar-->
-
+			<nav class="nav_hover">	
 				<table width="70%" align="center" cellpadding="15px" >
 					<tr class="decor">
 						<th class="nav" ><a href="../home.html" class="containertext" style="font-family: sans-serif;">Home</a></th>
