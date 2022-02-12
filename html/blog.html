@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is the website of Z-TECH ONLINE STORE, we sell computer related devices to make everything easier for you">	
+		<meta name="keywords" content="ztech, Z-TECH,Z-TECH ONLINE">
+		<meta name="author" content="Rahul Mathema">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<link rel="icon" href="../images/icon.webp" type="image/gif" sizes="16x16">
+		<title>blog</title>
+
+<!--outerscript-->
+
+		<script src="../java/time.js"></script>
+		<script src="../java/card.js"></script>
+		
+	</head>
+
+<!--outer css-->	
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<body style="background-color: black;" >
+
+		
+		<style type="text/css">
+			canvas {
+				z-index: 5;
+				display: block;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+			.snowflake {
+			  width: 100%;
+			}
+		  
+		</style>
+
+		<canvas id="canvas" class="ng-scope" width="1707" height="813"></canvas>
+
+		<img src="../images/snowflakes/snowflakes.png" class="snowflake hidden ng-scope" hidden>
+
+		<script type="text/javascript" src="../javascripts animations/snowflakes.js"></script>
+		
+		<table class="Container">
+			<tr><td style="font-family: fantasy;">Z-TECH<br> ONLINE</td></tr>
+		</table>
+
+<!--division for clock-->
+
+	<h1><div id="clock" style="font-family: sans-serif; width: 15%; margin: auto; padding: 15px; color: red; background-color: cadetblue;" align="center"></div></h1> 
+	
+<!--this is upper login card-->
+
+<input type="button" name="" value="👤" style="position: absolute; top: 20px; right: 20px;" onclick="login2()">
+		<div class="bg-modal">
+			<div class="card" style="background-color: skyblue;">
+				<img src="../images/z.png" width="100px" height="100px"><br><br><br>
+				<form>
+					<input type="text" id="email" name="" placeholder="Email" style="width: 200px; height: 20px; border-radius: 10px;"><br><br>
+					<input type="password" id="password" name="" placeholder="Password"  style="width: 170px; height: 20px; border-radius: 10px;">
+					<input type="button" id="watch" name="" value="🕶"  onclick="see()" style="width: 30px; border-radius: 50px;">
+					<br><br>
+					<input type="button" name="" value="Log In" style="border-radius: 10px;" onclick="login()"> <br><br>
+				</form>
+				<div class="close">
+					+
+				</div>
+			</div>
+		</div>
+
+
+<!--navigation bar-->
+			<nav class="nav_hover">
+				<table width="70%" align="center" cellpadding="15px" >
+					<tr class="decor">
+						<th class="nav" ><a href="../home.html" class="containertext" style="font-family: sans-serif;">Home</a></th>
+						<th class="nav"><a href="./category.html" class="containertext" style="font-family: sans-serif;">Category</a></th>
+						<th class="nav"><a href="./contact.html" class="containertext" style="font-family: sans-serif;">Contact Us</a></th>
+						<th class="current"><a href="#" style=" color: white; font-family: sans-serif;" >Blog</a></th>
+						<th class="nav"><a href="./research.html" class="containertext" style="font-family: sans-serif;">Research</a></th>
+					</tr>
+				</table>
+			</nav>
+			<br><br><br>
+
+<!--this is text-->
+			<div style="background-color: white; width: 50%; margin: auto; padding: 15px; font-family: sans-serif; font-size: 16px; border-radius: 20px; padding: 15px; justify-content: center;" align="left" >
+		
+					<p>If we think about it our world wouldve been a totally different place if it werent for information technology. Information technology has made our life soo much easier, but before speaking about the benefits lets first know what an information technology actually is.						
+					</p>
+					<p>An Information Technology is an environment created by different computers which connects together to store share and create data. Information Technology is used in every developing country in the world currently and it makes sense as without a proper keeping and sharing of data, operations would take longer time to execute and would have many flaws as well.</p>
+					<p>In my life as an individual Information Technology plays an important role by helping me store and share data which I need in my daily life, I can keep track of my routines, remind myself of the things I need to do, and pass all the information in a pinch of seconds.Without saying much I would like to finish this here and finally I would like to say that without Information Technology our lives wouldve been primitive and not as functional as it is.</p>
+					<p>Thank You.</p>
+					<div align="center"> 
+						<img src="../images/misc/technology.png" width="400px">
+					</div>
+		
+			</div><br><br>
+	</body>
+
+<!--footer-->
+
+	<footer class="foottxt">All Licensed To
+			<p style="font-size: 15px ; text-align: center; color: cadetblue; font-family: sans-serif ;">
+
+				 &copy Z TECH COMP
+				 
+			</p>
+					<scrpit src="time.js"></scrpit>
+		</footer>	
+	<script type="text/javascript">
+
+			document.querySelector('.close').addEventListener("click", function() 
+			{
+				document.querySelector('.bg-modal').style.display = "none";
+			});
+	</script>
+</html>

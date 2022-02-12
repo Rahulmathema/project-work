@@ -1,0 +1,184 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is the website of Z-TECH ONLINE STORE, we sell computer related devices to make everything easier for you">	
+		<meta name="keywords" content="ztech, Z-TECH,Z-TECH ONLINE">
+		<meta name="author" content="Rahul Mathema">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+		<link rel="icon" href="../images/icon.webp" type="image/gif" sizes="16x16">
+		<title>contact</title>
+
+		
+<!--outerscript-->
+
+		<script src="../java/time.js"></script>
+		<script src="../java/card.js"></script>
+
+	</head>
+
+
+<!--outer css-->
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<body style="background-color: black;" >
+
+		<style type="text/css">
+			
+
+		</style>
+
+		<table class="Container">
+			<tr><td style="font-family: fantasy;">Z-TECH<br> ONLINE</td></tr>
+		</table>
+
+<!--division for clock-->
+
+	<h1><div id="clock" style="font-family: sans-serif; width: 15%; margin: auto; padding: 15px; color: white; background-color: cadetblue;" align="center"></div></h1> 
+
+	
+<!--this is upper login card-->
+
+<input type="button" name="" value="👤" style="position: absolute; top: 20px; right: 20px;" onclick="login2()">
+
+		<div class="bg-modal">
+			<div class="card" style="background-color: skyblue;">
+				<img src="../images/z.png" width="100px" height="100px"><br><br><br>
+				<form>
+					<input type="text" id="email" name="" placeholder="Email" style="width: 200px; height: 20px; border-radius: 10px;"><br><br>
+					<input type="password" id="password" name="" placeholder="Password"  style="width: 170px; height: 20px; border-radius: 10px;">
+					<input type="button" id="watch" name="" value="🕶"  onclick="see()" style="width: 30px; border-radius: 50px;">
+					<br><br>
+					<input type="button" name="" value="Log In" style="border-radius: 10px;" onclick="login()"> <br><br>
+				</form>
+				<div class="close">
+					+
+				</div>
+			</div>
+		</div>
+
+<!--navigation  bar-->
+
+	<nav>
+		<table width="70%" align="center" cellpadding="15px" >
+			<tr class="decor">
+				<th class="nav" ><a href="../home.html" class="containertext" style="font-family: sans-serif;">Home</a></th>
+				<th class="nav"><a href="./category.html" class="containertext" style="font-family: sans-serif;">Category</a></th>
+				<th class="current"><a href="#" style=" color: white; font-family: sans-serif;" >Contact Us</a></th>
+				<th class="nav"><a href="./blog.html" class="containertext" style="font-family: sans-serif;">Blog</a></th>
+				<th class="nav"><a href="./research.html" class="containertext" style="font-family: sans-serif;">Research</a></th>
+			</tr>
+		</table>
+	</nav>
+	<br><br><br>
+
+<!--box division-->
+
+	<div  class="Container3">
+
+<!--complaint form-->		
+
+		<form name="message" onsubmit="complaint()">
+
+			<h3 style="font-family: sans-serif; color: cadetblue;" >Feedback Form</h3><br>
+
+			First Name : <br>
+
+			<input type="text" name="fname" placeholder="E.g.Dave"><br><br>
+
+			Last Name : <br>
+
+			<input type="text" name="lname" placeholder="E.g.Stone"><br><br>
+
+			Gender : <br>
+
+			<input type="radio" name="gender" id="radio1"> Male
+			<input type="radio" name="gender" id="radio2"> Female<br><br>
+
+			Email ID : <br>
+
+			<input type="text" name="mail" placeholder="E.g.davestone123@gmail.com" style="width: 250px;"><br><br>
+
+			Message : <br>
+
+			<textarea style="width: 200px; height: 150px;" name="messages" id="message"></textarea><br><br>
+
+<!--input type is kept submit instead of button because form is being used-->
+
+			<input type="submit" id="button1" name="button1" value="Submit"> <br><br>
+			
+		</form>
+
+		<div align="left" style="font-size: 15px;">
+
+			<h4 style="color: cadetblue;">MORE WAYS TO CONTACT US</h4>
+			<img src="../images/misc/phone.png" width="20px" height="20px">&nbsp;&nbsp;&nbsp;980049919, 980301709<br><br>
+			<img src="../images/misc/frame.png" width="70px" align="right">			
+			<img src="../images/misc/mail.png" width="25px" height="20px">&nbsp;&nbsp;ztechonline@gmai.com<br> <br>
+			<img src="../images/misc/insta.png" width="20px" height="20px">&nbsp;&nbsp;&nbsp;@techzonline<br><br>
+			<a href="https://www.google.com/">VISIT GOOGLE</a>
+
+			
+		</div>
+		
+	</div>
+
+
+		</body> <br><br>
+
+<!--footer-->
+
+	<footer class="foottxt">All Licensed To
+			<p style="font-size: 15px ; text-align: center; color: cadetblue; font-family: sans-serif ;">
+
+				 &copy Z TECH COMP
+				 
+			</p>
+					
+		</footer>	
+
+		<script type="text/javascript">
+
+//funtion to alert user for the feedback 
+
+			function complaint()
+			{
+				var fname=document.forms["message"]["fname"].value;
+				var lname=document.forms["message"]["lname"].value;
+				var mail=document.forms["message"]["mail"].value;
+				var gender=""
+
+				if (radio1.checked==true) 
+				{
+					gender= "Mr."
+				}
+
+				if (radio2.checked==true) 
+				{
+					gender= "Ms."
+				}
+
+				if (fname=="" || lname=="" || mail=="" || gender=="") 
+				{
+				 alert("empty field found");
+				}
+				else
+				{
+				 alert("thank you for your feedback " + " "+gender+fname)
+				}
+				
+
+
+			}
+
+			document.querySelector('.close').addEventListener("click", function() 
+			{
+				document.querySelector('.bg-modal').style.display = "none";
+			});
+		</script>
+
+
+	</html>

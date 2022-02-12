@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is the website of Z-TECH ONLINE STORE, we sell computer related devices to make everything easier for you">	
+		<meta name="keywords" content="ztech, Z-TECH,Z-TECH ONLINE">
+		<meta name="author" content="Rahul Mathema">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<link rel="icon" href="../images/icon.webp" type="image/gif" sizes="16x16">
+		<title>categories</title>
+
+<!--outerscript-->
+
+		<script src="../java/time.js"></script>
+		<script src="../java/card.js"></script>
+		
+	</head>
+
+<!--outer css-->	
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<body style="background-color: black;" >
+				<style type="text/css">
+
+				canvas {
+					z-index: 5;
+					display: block;
+					position: fixed;
+					top: 0;
+					bottom: 0;
+					pointer-events: none;
+				}
+				.snowflake {
+				  width: 100%;
+				}
+			  
+			</style>
+	
+			<canvas id="canvas" class="ng-scope" width="1707" height="813"></canvas>
+	
+			<img src="../images/snowflakes/snowflakes.png" class="snowflake hidden ng-scope" hidden>
+	
+			<script type="text/javascript" src="../javascripts animations/snowflakes.js"></script>
+
+		<style type="text/css">
+			
+
+		</style>
+
+		<table class="Container">
+			<tr><td style="font-family: fantasy;">Z-TECH<br> ONLINE</td></tr>
+		</table>
+
+<!--division for clock-->
+
+	<h1><div id="clock" style="font-family: sans-serif; width: 15%; margin: auto; padding: 15px" align="center"></div></h1> 
+	
+<!--this is upper login card-->
+
+<input type="button" name="" value="👤" style="position: absolute; top: 20px; right: 20px;" onclick="login2()">
+		<div class="bg-modal">
+			<div class="card" style="background-color: black;">
+				<img src="../images/z.png" width="100px" height="100px"><br><br><br>
+				<form>
+					<input type="text" id="email" name="" placeholder="Email" style="width: 200px; height: 20px; border-radius: 10px;"><br><br>
+					<input type="password" id="password" name="" placeholder="Password"  style="width: 170px; height: 20px; border-radius: 10px;">
+					<input type="button" id="watch" name="" value="🕶"  onclick="see()" style="width: 30px; border-radius: 50px;">
+					<br><br>
+					<input type="button" name="" value="Log In" style="border-radius: 10px;" onclick="login()"> <br><br>
+				</form>
+				<div class="close">
+					+
+				</div>
+			</div>
+		</div>
+
+<!--navigation bar-->
+		<nav class="nav_hover">
+			<table width="70%" align="center" cellpadding="15px" >
+				<tr class="decor">
+					<th class="nav" ><a href="../home.html" class="containertext" style="font-family: sans-serif;">Home</a></th>
+					<th class="current"><a href="#" style=" color: black; font-family: sans-serif;" >Category</a></th>
+					<th class="nav"><a href="./contact.html" class="containertext" style="font-family: sans-serif;">Contact Us</a></th>
+					<th class="nav"><a href="./blog.html" class="containertext" style="font-family: sans-serif;">Blog</a></th>
+					<th class="nav"><a href="./research.html" class="containertext" style="font-family: sans-serif;">Research</a></th>
+				</tr>
+			</table>
+		</nav>
+		<br><br><br>
+
+<!--different categories of products-->
+
+		<div>
+			<table width="99%" cellpadding="15px" align="center">
+				<tr>
+					<!--category headphones-->
+					<th class="nav"><b> Monitors</b><br><br>
+					
+							<a href="../producthtml/monitor.html">
+								<img src="../images/monitors/LENOVO.png" height="200px" width="200px"><br><br><br>
+							VIEW NOW</a>
+					</th>
+					<!--category keyboard-->
+					<th class="nav"><b>Keyboard</b><br><br>
+						
+							<a href="../producthtml/keyboard.html">
+								<img src="../images/keyboards/razer1.png" height="200px" width="200px"><br><br><br>
+							VIEW NOW</a>
+					</th>
+				</tr>
+				<tr>
+					<!--category headphones-->
+						<th class="nav"><b>Headphones</b><br><br>
+						
+							<a href="../producthtml/headphone.html">
+								<img src="../images/Headphones/logictech1.png" height="200px" width="200px"><br><br><br>
+							VIEW NOW</a>
+					</th>
+					<!--category mouse-->
+						<th class="nav"><b>Mouse</b><br><br>
+						
+							<a href="../producthtml/mouse.html">
+								<img src="../images/mouse/zowie1.png" height="200px" width="200px"><br><br><br>
+							VIEW NOW</a>
+					</th>
+				</tr>
+
+			</table>
+		</div>
+	</body>
+
+<!--footer-->
+
+	<footer class="foottxt">All Licensed To
+			<p style="font-size: 15px ; text-align: center; color: cadetblue; font-family: sans-serif ;">
+
+				 &copy Z TECH COMP
+				 
+			</p>
+	</footer>	
+	<script type="text/javascript">
+
+			document.querySelector('.close').addEventListener("click", function() 
+			{
+				document.querySelector('.bg-modal').style.display = "none";
+			});
+	</script>
+
+	</html>
