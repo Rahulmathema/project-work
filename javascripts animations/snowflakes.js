@@ -1,4 +1,4 @@
-//Taken reference from webpage
+//Taken reference from website
 
 function fallingSnow(){
     function a(){
